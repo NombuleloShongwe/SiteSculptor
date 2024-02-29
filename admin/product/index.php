@@ -11,7 +11,7 @@ $sub_categories = array_column($sub_cat_qry->fetch_all(MYSQLI_ASSOC), 'sub_categ
 ?>
 <div class="card card-outline card-primary">
 	<div class="card-header">
-		<h3 style="text-align:center;" class="card-title"/> Products</h3>
+		<h3 class="card-title"/> Products</h3>
 		<div class="card-tools">
 			<a href="?page=product/manage_product" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
 		</div>
