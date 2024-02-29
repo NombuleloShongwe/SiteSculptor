@@ -9,7 +9,7 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
 ?>
 <div class="card card-primary card-outline">
     <div class="card-header">
-        <h5 class="card-title">Sales Report</h5>
+        <h1 class="card-title">Sales Report</h1>
     </div>
     <div class="card-body">
         <form id="filter-form">
@@ -32,16 +32,21 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
         </form>
         <hr>
         <div id="printable">
-            <div class="row row-cols-2 justify-content-center align-items-center" id="print_header" style="display:none">
-                <div class="col-1">
-                    <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="<?php echo $_settings->info('short_name') ?>" width="75px" heigth="75px">
-                </div>
-                <div class="col-7">
-                    <h4 class="text-center m-0"><?php echo $_settings->info('name') ?></h4>
-                    <h3 class="text-center m-0"><b>Sales Report</b></h3>
-                    <p class="text-center m-0">Date Between <?php echo $date_start ?> and <?php echo $date_end ?></p>
-                </div>
+    <div class="row row-cols-2 justify-content-center align-items-center" id="print_header" style="display:none">
+        <div class="col-1">
+            <img src="<?php echo validate_image($_settings->info('logo')) ?>" alt="<?php echo $_settings->info('short_name') ?>" width="75px" height="75px">
+        </div>
+        <div class="col-7">
+            <h4 class="text-center m-0"><?php echo $_settings->info('name') ?></h4>
+            <h3 class="text-center m-0"><b>Sales Report</b></h3>
+            <p class="text-center m-0">Date Between <?php echo $date_start ?> and <?php echo $date_end ?></p>
+            <!-- Search icon added here -->
+            <div class="text-center">
+                <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
             </div>
+        </div>
+    </div>
+</div>
             <hr>
 
             <table class="table table-bordered">
