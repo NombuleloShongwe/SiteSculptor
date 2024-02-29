@@ -22,7 +22,7 @@
         margin: 1rem 0;
         margin-left: 150px;
         margin-right: 150px;
-        background-color: green;
+        background-color: #005b80;
         border: 0;
         opacity: 0.20;
     }
@@ -30,11 +30,11 @@
     .modal-body {
         color: black;
         border: 3px solid;
-        border-color: green;
+        border-color: #005b80;
         border-radius: 25px;
         background-size: cover;
         background-position: center;
-        background: linear-gradient(95deg, #02fa44, #f5f5e9, #f5f5e9, #02fa44);
+        background: whitesmoke;
         background-size: 300% 300%;
         animation: color 12s ease-in-out infinite;
     }
@@ -70,8 +70,23 @@
         height: 35px;
         margin-top: 15px;
         font-weight: 700;
+        background-color: #ccc1a5;
+        border: 2px solid #005b80;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 15px;
+        color: black;
+        box-shadow: 0 0 10px rgba(241, 238, 238, 0.5);
+        transition: .5s ease;
+    }
+
+    .login-BTN:hover {
+        width: 100%;
+        height: 35px;
+        margin-top: 15px;
+        font-weight: 700;
         background-color: wheat;
-        border: 2px solid green;
+        border: 2px solid #005b80;
         cursor: pointer;
         font-size: 14px;
         border-radius: 15px;
@@ -100,7 +115,7 @@
     .form-group input {
         width: 100%;
         height: 100%;
-        background: wheat;
+        background: #ccc1a5;
         border-radius: 15px;
         border: none;
         outline: none;
@@ -125,7 +140,7 @@
     form .form-group {
         width: 100%;
         height: 40px;
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid #005b80;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         margin: 35px 0;

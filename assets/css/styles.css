@@ -59,8 +59,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #168463;
-    background-color: #0a3c15;
+    color: black;
+    background-color: whitesmoke;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
