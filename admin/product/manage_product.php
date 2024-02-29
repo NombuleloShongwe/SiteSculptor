@@ -13,7 +13,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 ?>
 <style>
     .specs-text-field{
-        background:transparent;
+        background:#667c3e;
         border:unset;
         outline:unset;
         height:60px;
