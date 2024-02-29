@@ -1,14 +1,80 @@
 
-<section class="py-5">
+<section class="py-5" style="background-color: #EAE0C8;">
+<style>
+    /* Add your CSS styles here */
+    .chat-widget {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .chat-header {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .chat-body {
+        padding: 10px;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .chat-input {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 5px;
+    }
+
+    .chat-btn {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 8px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Chat Widget -->
+<div class="chat-widget" id="chatWidget">
+    <div class="chat-header">Live Chat</div>
+    <div class="chat-body" id="chatBody"></div>
+    <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+    <button class="chat-btn" id="sendButton">Send</button>
+</div>
     <div class="container">
-        <div class="row">
-            <div class="col d-flex justify-content-end mb-2">
+	
+        <div class="circle" >
+            <div class="col d-flex justify-content-end mb-5 card rounded-0">
                 <button class="btn btn-outline-dark btn-flat btn-sm" type="button" id="empty_cart">Empty Cart</button>
             </div>
         </div>
-        <div class="card rounded-0">
+        <div class="card rounded-0" style="background-color:  #D3D3D3;>
             <div class="card-body">
-                <h3><b>Cart List</b></h3>
+			
+	
+<h3 style="text-align: center; color: #333333;"><b>Cart List</b></h3>
+<hr class="border-dark">
+<div style="text-align: center; background-color: #32CD32; padding: 10px;">
+    <h2 style="color: #333333;"><b>Number of Items</b></h2>
+</div>
+
+
                 <hr class="border-dark">
                 <?php 
                     $qry = $conn->query("SELECT c.*,p.name,p.price,p.id as pid from `cart` c inner join `inventory` i on i.id=c.inventory_id inner join products p on p.id = i.product_id where c.client_id = ".$_settings->userdata('id'));
@@ -49,20 +115,74 @@
                         <div class="col text-right align-items-center d-flex justify-content-end">
                             <h4><b class="total-amount"><?php echo number_format($row['price'] * $row['quantity']) ?></b></h4>
                         </div>
+						
                     </div>
                 <?php endwhile; ?>
                 <div class="d-flex w-100 justify-content-between mb-2 py-2 border-bottom">
                     <div class="col-8 d-flex justify-content-end"><h4>Grand Total:</h4></div>
+                       
                     <div class="col d-flex justify-content-end"><h4 id="grand-total">-</h4></div>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex w-100 justify-content-end">
+					<div class="d-flex w-100 justify-content-end">
             <a href="./?p=checkout" class="btn btn-sm btn-flat btn-dark">Checkout</a>
         </div>
+                </div>
+            </div>
+			<div style="border-radius: 20px; background-color:#32CD32; padding: 10px 20px; display: inline-block;">
+        <a href="?action=click" style="text-decoration: none; color: #333333 ;">Apply Discount</a>
+
     </div>
+        </div>
+        
+    </div>
+	<div class="customer-support-info">
+        <p>If you need assistance, please contact our customer support:</p>
+        <p>Email: support@example.com</p>
+        <p>Phone: 1-800-123-4567</p>
+    </div>
+	<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message'])) {
+    $message = $_POST['message'] . "\n";
+    
+    // Save message to a text file (you can replace this with a database)
+    $file = 'messages.txt';
+    file_put_contents($file, $message, FILE_APPEND | LOCK_EX);
+}
+?>
+
 </section>
 <script>
+// Chat Widget Functionality
+const chatWidget = document.getElementById('chatWidget');
+const chatBody = document.getElementById('chatBody');
+const chatInput = document.getElementById('chatInput');
+const sendButton = document.getElementById('sendButton');
+
+// Chat Widget Functionality
+document.addEventListener("DOMContentLoaded", function() {
+    chatWidget.style.display = 'block';
+});
+
+
+sendButton.addEventListener('click', () => {
+    const message = chatInput.value.trim();
+    if (message !== '') {
+        const messageElement = document.createElement('div');
+        messageElement.textContent = 'You: ' + message;
+        chatBody.appendChild(messageElement);
+        chatInput.value = '';
+
+        // Send message to PHP script
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'send_message.php', true);
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.send('message=' + encodeURIComponent(message));
+    }
+});
+
+// Display Chat Widget when clicking on customer support info
+const customerSupportInfo = document.querySelector('.customer-support-info');
+customerSupportInfo.addEventListener('click', toggleChatWidget);
+
     function calc_total(){
         var total  = 0
 
