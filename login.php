@@ -34,6 +34,23 @@
         border-radius: 25px;
         background-size: cover;
         background-position: center;
+        background: linear-gradient(95deg, #02fa44, #f5f5e9, #f5f5e9, #02fa44);
+        background-size: 300% 300%;
+        animation: color 12s ease-in-out infinite;
+    }
+
+    @keyframes color {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
     }
 
     .form-group input {
