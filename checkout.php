@@ -11,7 +11,7 @@ $total = 0;
         <div class="card rounded-0">
             <div class="card-body"></div>
             <h3 class="text-center"><b>Checkout</b></h3>
-            <hr class="border-dark">
+            <hr class="border-2px solid green">
             <form action="" id="place_order">
                 <input type="hidden" name="amount" value="<?php echo $total ?>">
                 <input type="hidden" name="payment_method" value="cod">
@@ -24,11 +24,11 @@ $total = 0;
                     <div class="form-group d-flex pl-2">
                         <div class="custom-control custom-radio">
                           <input class="custom-control-input custom-control-input-primary" type="radio" id="customRadio4" name="order_type" value="1" checked="">
-                          <label for="customRadio4" class="custom-control-label">For Delivery</label>
+                          <label for="customRadio4" class="custom-control-label">Delivery</label>
                         </div>
                         <div class="custom-control custom-radio ml-3">
                           <input class="custom-control-input custom-control-input-primary custom-control-input-outline" type="radio" id="customRadio5" name="order_type" value="2">
-                          <label for="customRadio5" class="custom-control-label">For Pick up</label>
+                          <label for="customRadio5" class="custom-control-label">Pick up</label>
                         </div>
                       </div>
                         <div class="form-group col address-holder">
@@ -65,7 +65,7 @@ paypal.Button.render({
     commit: true, // Show a 'Pay Now' button
  
     style: {
-    	color: 'blue',
+    	color: 'forest green',
     	size: 'small'
     },
  
