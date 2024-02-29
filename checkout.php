@@ -65,7 +65,7 @@ paypal.Button.render({
     commit: true, // Show a 'Pay Now' button
  
     style: {
-    	color: 'forest green',
+    	color: '#32CD32',
     	size: 'small'
     },
  
