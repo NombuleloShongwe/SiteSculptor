@@ -10,7 +10,7 @@
 <?php endif;?>
 <div class="card card-outline card-primary">
 	<div class="card-header">
-		<h3 class="card-title">List of Orders</h3>
+		<h3 class="card-title">List Of Orders</h3>
 		<!-- <div class="card-tools">
 			<a href="?page=order/manage_order" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
 		</div> -->
