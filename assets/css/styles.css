@@ -59,8 +59,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #168463;
-    background-color: #0a3c15;
+    color: black;
+    background-color: whitesmoke;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2952,14 +2952,14 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #228B22;
-    border-color: #f8f9fa;
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
 }
 
 .btn-primary:hover {
     color: #fff;
     background-color: #0b5ed7;
-    border-color: #0a58ca;
+    border-color: #fff;
 }
 
 .btn-check:focus+.btn-primary,
@@ -6288,6 +6288,7 @@ fieldset:disabled .btn {
 
 .carousel {
     position: relative;
+    border-radius: 15px;
 }
 
 .carousel.pointer-event {
@@ -6297,6 +6298,7 @@ fieldset:disabled .btn {
 .carousel-inner {
     position: relative;
     width: 100%;
+    border-radius: 15px;
     overflow: hidden;
 }
 

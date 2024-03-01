@@ -34,12 +34,13 @@
     .card-body {
       color: black;
       border: 3px solid;
-      border-color: green;
+      border-color: #005b80;
       border-radius: 25px;
       background-size: cover;
       background-position: center;
-      background: linear-gradient(95deg, #02fa44, #f5f5e9, #f5f5e9, #02fa44);
+      background: linear-gradient(95deg, #013147, #dfeef5, #dfeef5, #2487b5);
       background-size: 300% 300%;
+      backdrop-filter: blur(20px);
       animation: color 24s ease-in-out infinite;
     }
 
@@ -67,7 +68,7 @@
     .input-group {
       width: 100%;
       height: 40px;
-      border-bottom: 3px solid green;
+      border-bottom: 3px solid #005b80;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       margin: 35px 0;
@@ -76,7 +77,7 @@
     .input-group input {
       width: 100%;
       height: 100%;
-      background: wheat;
+      background: whitesmoke;
       border-radius: 15px;
       border: none;
       outline: none;
@@ -103,8 +104,26 @@
       height: 35px;
       margin-top: 15px;
       font-weight: 700;
-      background-color: wheat;
-      border: 2px solid green;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: #03bcff;
+      border: 2px solid #005b80;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 15px;
+      color: black;
+      box-shadow: 0 0 10px rgba(241, 238, 238, 0.5);
+      transition: .5s ease;
+    }
+
+    .row button:hover {
+      width: 100%;
+      margin: 0 10px;
+      height: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 15px;
+      font-weight: 700;
+      background-color: #5dcffc;
+      border: 2px solid white;
       cursor: pointer;
       font-size: 14px;
       border-radius: 15px;
@@ -124,13 +143,14 @@
       text-align: center;
       font-weight: 700;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #013147;
     }
 
     .goto-client p a:hover {
       text-decoration: underline;
       font-weight: 700;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: green;
+      color: #03bcff;
     }
 
     #page-title {
