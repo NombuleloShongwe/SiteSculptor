@@ -6288,6 +6288,7 @@ fieldset:disabled .btn {
 
 .carousel {
     position: relative;
+    border-radius: 15px;
 }
 
 .carousel.pointer-event {
@@ -6297,6 +6298,7 @@ fieldset:disabled .btn {
 .carousel-inner {
     position: relative;
     width: 100%;
+    border-radius: 15px;
     overflow: hidden;
 }
 
