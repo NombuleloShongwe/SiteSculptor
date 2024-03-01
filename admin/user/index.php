@@ -16,7 +16,7 @@ foreach($user->fetch_array() as $k =>$v){
 			<form action="" id="manage-user">	
 				<input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
 				<div class="form-group">
-					<label for="name">First Name</label>
+					<label for="name">First Names</label>
 					<input type="text" name="firstname" id="firstname" class="form-control" value="<?php echo isset($meta['firstname']) ? $meta['firstname']: '' ?>" required>
 				</div>
 				<div class="form-group">
@@ -28,7 +28,7 @@ foreach($user->fetch_array() as $k =>$v){
 					<input type="text" name="username" id="username" class="form-control" value="<?php echo isset($meta['username']) ? $meta['username']: '' ?>" required  autocomplete="off">
 				</div>
 				<div class="form-group">
-					<label for="password">Password</label>
+					<label for="password">Enter Password</label>
 					<input type="password" name="password" id="password" class="form-control" value="" autocomplete="off">
 					<small><i>Leave this blank if you dont want to change the password.</i></small>
 				</div>
