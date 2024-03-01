@@ -103,24 +103,29 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
     </div>
 </div>
 <noscript>
-    <style>
-        .m-0{
-            margin:0;
-        }
-        .text-center{
-            text-align:center;
-        }
-        .text-right{
-            text-align:right;
-        }
-        .table{
-            border-collapse:collapse;
-            width: 100%
-        }
-        .table tr,.table td,.table th{
-            border:1px solid gray;
-        }
-    </style>
+<style>
+    .m-0 {
+        margin: 0;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: lightgreen; /* Change background color to light green */
+        color: blue; /* Change text color to blue */
+    }
+    .table tr,
+    .table td,
+    .table th {
+        border: 1px solid gray;
+    }
+</style>
+
 </noscript>
 <script>
     $(function(){
