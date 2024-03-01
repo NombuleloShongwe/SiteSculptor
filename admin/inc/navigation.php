@@ -8,6 +8,15 @@
         </a>
         <!-- Sidebar -->
         <div class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-transition os-host-scrollbar-horizontal-hidden">
+        <style>
+  /* Custom CSS */
+  .nav-sidebar {
+    background-color: #EAE0C8; /* Pastel Yellow */
+  }
+  .nav-sidebar .nav-link {
+    color: #32CD32 !important; /* Lime Green */
+  }
+</style>
           <div class="os-resize-observer-host observed">
             <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
           </div>
