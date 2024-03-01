@@ -104,6 +104,7 @@
       height: 35px;
       margin-top: 15px;
       font-weight: 700;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       background-color: #03bcff;
       border: 2px solid #005b80;
       cursor: pointer;

@@ -70,6 +70,7 @@
         height: 35px;
         margin-top: 15px;
         font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background-color: #ccc1a5;
         border: 2px solid #005b80;
         cursor: pointer;
@@ -85,8 +86,9 @@
         height: 35px;
         margin-top: 15px;
         font-weight: 700;
-        background-color: wheat;
-        border: 2px solid #005b80;
+        background-color: #005fcc;
+        border: 2px solid yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: pointer;
         font-size: 14px;
         border-radius: 15px;
@@ -103,13 +105,14 @@
     }
 
     .login-register p a {
-        color: black;
+        color: #005b80;
         font-weight: 600;
         text-decoration: none;
     }
 
     .login-register p a:hover {
         text-decoration: underline;
+        color: blue
     }
 
     .form-group input {
