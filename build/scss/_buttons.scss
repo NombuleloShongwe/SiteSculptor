@@ -10,9 +10,9 @@
 
   // Flat buttons
   &.btn-flat {
-    @include border-radius(0);
-    border-width: 1px;
-    box-shadow: none;
+    @include border-radius(25px 25px);
+    border-width: 3px;
+    box-shadow: 10px 10px;
   }
 
   // input file btn

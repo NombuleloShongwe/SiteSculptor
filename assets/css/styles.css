@@ -2952,8 +2952,18 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
+<<<<<<< Updated upstream
     background-color: #0b5ed7;
     border-color: #0b5ed7;
+=======
+<<<<<<< Updated upstream
+    background-color: #228B22;
+    border-color: #f8f9fa;
+=======
+    background-color: #59da26;
+    border-color: #dacd21;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
 
 .btn-primary:hover {
