@@ -13,10 +13,10 @@ foreach($user->fetch_array() as $k =>$v){
 	<div class="card-body">
 		<div class="container-fluid">
 			<div id="msg"></div>
-			<form action="" id="manage-user">	
+			<form action="" id="manage-user"style="background-color: rgb(175, 195, 168);">	
 				<input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
 				<div class="form-group">
-					<label for="name"style="color: green;">First Names</label>
+					<label for="name"style="color: green;">First Name(s)</label>
 					<input type="text" name="firstname" id="firstname" class="form-control" value="<?php echo isset($meta['firstname']) ? $meta['firstname']: '' ?>" required>
 				</div>
 				<div class="form-group">
@@ -48,7 +48,8 @@ foreach($user->fetch_array() as $k =>$v){
 	<div class="card-footer">
 			<div class="col-md-12">
 				<div class="row">
-					<button class="btn btn-sm btn-primary" form="manage-user">Update</button>
+					<button class="btn btn-sm" form="manage-user" style="background-color: green;">Update</button>
+
 				</div>
 			</div>
 		</div>
