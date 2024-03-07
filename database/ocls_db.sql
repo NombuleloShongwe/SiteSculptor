@@ -75,7 +75,7 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `category`, `description`, `status`, `date_created`) VALUES
-(1, 'Personal Computers', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum, elit sit amet iaculis eleifend, risus enim accumsan libero, vel commodo ante neque at mi. Donec consectetur magna turpis, ac tempor sapien tristique eget.', 1, '2023-04-03 09:32:09'),
+(1, 'Paradise Personal Computers', 'Our range of Paradise Personal Computers are digital devices which are designed for personal purposes such as working, studying, gaming and browsing the internet. This is a standard PC wich consists of sevral hardware componenets, such as a motherboard, a quality processor, durable storage amd input/output devices such as a monitor, keyboard and mouse.', 1, '2023-04-03 09:32:09'),
 (2, 'Minicomputer', 'Suspendisse porta aliquet finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus', 1, '2023-04-03 09:33:26'),
 (3, 'Mainframe Computers', 'Donec rhoncus diam nisi. Cras vehicula lorem et leo dignissim pharetra nec ac nisl. Curabitur scelerisque scelerisque felis, a lacinia odio elementum id.', 1, '2023-04-03 09:33:45'),
 (4, 'Super Computers', 'Praesent sollicitudin quam vitae lorem finibus, at feugiat est lobortis. Etiam vitae imperdiet neque. In magna ligula, lobortis sed porta quis, sodales vel libero.', 1, '2023-04-03 09:34:22');
