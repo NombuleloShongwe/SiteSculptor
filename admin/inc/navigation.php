@@ -12,9 +12,11 @@
   /* Custom CSS */
   .nav-sidebar {
     background-color: #EAE0C8; /* Pastel Yellow */
+    font-weight: bold;
   }
   .nav-sidebar .nav-link {
     color: #32CD32 !important; /* Lime Green */
+    font-weight: bold;
   }
   .nav-sidebar .nav-header {
     color: #ffffff; /* White color */
