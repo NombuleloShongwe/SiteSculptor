@@ -34,11 +34,11 @@
     .card-body {
       color: black;
       border: 3px solid;
-      border-color: #005b80;
+      border-color: greenyellow;
       border-radius: 25px;
       background-size: cover;
       background-position: center;
-      background: linear-gradient(95deg, #013147, #dfeef5, #dfeef5, #2487b5);
+      background: linear-gradient(95deg, green, #dfeef5, #dfeef5, green);
       background-size: 300% 300%;
       backdrop-filter: blur(20px);
       animation: color 24s ease-in-out infinite;
@@ -68,7 +68,7 @@
     .input-group {
       width: 100%;
       height: 40px;
-      border-bottom: 3px solid #005b80;
+      border-bottom: 3px solid green;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
       margin: 35px 0;
@@ -105,8 +105,8 @@
       margin-top: 15px;
       font-weight: 700;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      background-color: #03bcff;
-      border: 2px solid #005b80;
+      background-color: green;
+      border: 2px solid greenyellow;
       cursor: pointer;
       font-size: 14px;
       border-radius: 15px;
