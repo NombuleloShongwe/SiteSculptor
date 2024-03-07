@@ -16,6 +16,10 @@
   .nav-sidebar .nav-link {
     color: #32CD32 !important; /* Lime Green */
   }
+  .nav-sidebar .nav-header {
+    color: #ffffff; /* White color */
+    font-weight: bold; /* Make the text bold */
+  }
 </style>
           <div class="os-resize-observer-host observed">
             <div class="os-resize-observer" style="left: 0px; right: auto;"></div>
