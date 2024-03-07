@@ -48,7 +48,8 @@ foreach($user->fetch_array() as $k =>$v){
 	<div class="card-footer">
 			<div class="col-md-12">
 				<div class="row">
-					<button class="btn btn-sm btn-primary" form="manage-user">Update</button>
+					<button class="btn btn-sm" form="manage-user" style="background-color: green;">Update</button>
+
 				</div>
 			</div>
 		</div>
