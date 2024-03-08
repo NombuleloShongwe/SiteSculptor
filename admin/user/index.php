@@ -13,7 +13,7 @@ foreach($user->fetch_array() as $k =>$v){
 	<div class="card-body">
 		<div class="container-fluid">
 			<div id="msg"></div>
-			<form action="" id="manage-user"style="background-color: rgb(175, 195, 168);">	
+			<form action="" id="manage-user">	
 				<input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
 				<div class="form-group">
 					<label for="name"style="color: green;">First Name(s)</label>
