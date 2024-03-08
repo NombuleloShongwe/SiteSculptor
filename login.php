@@ -59,7 +59,6 @@
         margin-top: 15px;
         font-weight: 700;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-color: #ccc1a5;
         border: 2px solid #005b80;
         cursor: pointer;
         font-size: 14px;

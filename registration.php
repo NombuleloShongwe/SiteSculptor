@@ -32,10 +32,17 @@
         margin: 35px 0;
     }
 
+    .row h3 {
+        font-size: 32px;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
     .form-group label {
         position: absolute;
         top: auto;
-        left: 35px;
+        left: 15px;
         transform: translateY(-100%);
         font-size: 16px;
         font-weight: 500;
@@ -56,12 +63,87 @@
         font-weight: 500;
         padding-right: 28px;
     }
+
+    .form-group textarea {
+        width: 100%;
+        height: 100%;
+        background: #ccc1a5;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: black;
+        padding-left: 10px;
+        font-weight: 500;
+        padding-right: 28px;
+    }
+
+    .form-group select {
+        width: 100%;
+        height: 100%;
+        background: #ccc1a5;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: black;
+        padding-left: 10px;
+        font-weight: 500;
+        padding-right: 28px;
+    }
+
+    .login-BTN {
+        width: 100%;
+        height: 35px;
+        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: 2px solid #005b80;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 15px;
+        color: black;
+        box-shadow: 0 0 10px rgba(241, 238, 238, 0.5);
+        transition: .5s ease;
+    }
+
+    .login-BTN:hover {
+        width: 100%;
+        height: 35px;
+        font-weight: 700;
+        background-color: #005fcc;
+        border: 2px solid yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 15px;
+        color: black;
+        box-shadow: 0 0 10px rgba(241, 238, 238, 0.5);
+        transition: .5s ease;
+    }
+
+    .login-register {
+        font-size: 14.5px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .login-register p a {
+        color: #005b80;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .login-register p a:hover {
+        text-decoration: underline;
+        color: blue
+    }
 </style>
 <div class="container-fluid">
     <form action="" id="registration">
         <div class="row">
 
-            <h3 class="text-center">Create New Account
+            <h3 class="text-center">Register Account
                 <span class="float-right">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -88,7 +170,7 @@
                 </div>
                 <div class="form-group">
                     <label for="" class="control-label">Gender</label>
-                    <select name="gender" id="" class="custom-select select" required>
+                    <select name="gender" id="" class="form-control form-control-sm form" required>
                         <option>Male</option>
                         <option>Female</option>
                     </select>
@@ -107,9 +189,12 @@
                     <label for="" class="control-label">Password</label>
                     <input type="password" class="form-control form-control-sm form" name="password" required>
                 </div>
-                <div class="form-group d-flex justify-content-between">
-                    <a href="javascript:void()" id="login-show">Already have an Account</a>
-                    <button class="btn btn-primary btn-flat">Register</button>
+                <button class="login-BTN">Login</button>
+                <div class="login-register">
+                    <p>
+                        Already have an account?
+                        <a href="javascript:void()" id="login-show">Log In here</a>
+                    </p>
                 </div>
             </div>
         </div>
