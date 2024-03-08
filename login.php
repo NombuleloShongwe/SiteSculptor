@@ -53,18 +53,6 @@
         }
     }
 
-    .form-group input {
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        border: 2px;
-        outline: 2px;
-        font-size: 16px;
-        color: white;
-        font-weight: 500;
-        padding-right: 28px;
-    }
-
     .login-BTN {
         width: 100%;
         height: 35px;
@@ -163,14 +151,16 @@
     </div>
     <form action="" id="login-form">
         <div class="form-group">
+            <label class="control-label">Email</label>
             <span class="icon"><i class="bx bxs-envelope"></i></span>
-            <input type="email" required />
-            <label>Email</label>
+            <input type="email" class="form-control form-control-sm form" required />
+
         </div>
         <div class="form-group">
+            <label class="control-label">Password</label>
             <span class="icon"><i class="bx bxs-lock"></i></span>
-            <input type="password" required />
-            <label>Password</label>
+            <input type="password" class="form-control form-control-sm form" required />
+
         </div>
         <button class="login-BTN">Login</button>
         <div class="login-register">

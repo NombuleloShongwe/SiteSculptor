@@ -4,10 +4,57 @@
         display: none;
     }
 
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+    }
+
     .modal-body {
-        border: 2px solid;
-        border-color: green;
+        color: black;
+        border: 3px solid;
+        border-color: #005b80;
         border-radius: 25px;
+        background-size: cover;
+        background-position: center;
+        background: whitesmoke;
+        background-size: 300% 300%;
+        animation: color 12s ease-in-out infinite;
+    }
+
+    form .form-group {
+        width: 100%;
+        height: 40px;
+        border-bottom: 3px solid #005b80;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin: 35px 0;
+    }
+
+    .form-group label {
+        position: absolute;
+        top: auto;
+        left: 35px;
+        transform: translateY(-100%);
+        font-size: 16px;
+        font-weight: 500;
+        pointer-events: none;
+
+    }
+
+    .form-group input {
+        width: 100%;
+        height: 100%;
+        background: #ccc1a5;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: black;
+        padding-left: 10px;
+        font-weight: 500;
+        padding-right: 28px;
     }
 </style>
 <div class="container-fluid">
@@ -50,7 +97,7 @@
             <div class="col-lg-7">
                 <div class="form-group">
                     <label for="" class="control-label">Default Delivery Address</label>
-                    <textarea class="form-control form" rows='3' name="default_delivery_address"></textarea>
+                    <textarea class="form-control form" rows='1' name="default_delivery_address"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="" class="control-label">Email</label>
